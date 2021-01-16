@@ -3,6 +3,7 @@
 	box-sizing:border-box
 }
 html{
+	
 	font-size:7.5px;
 	line-height:1.25;
 	color:#212121
@@ -10,7 +11,7 @@ html{
 body{
 	margin:0;
 	padding:0;
-	width:120rem
+	width:100%
 }
 .body--webpdf
 .template__fixed-element,
@@ -20,17 +21,17 @@ body{
 }
 .body--preview{
 	height:169.71429rem;
-	overflow:auto
+	/*overflow:auto*/
 }
 .body--preview .preview-box{
 	margin-top:6rem;
 	margin-bottom:6rem;
 	height:157.71429rem;
-	overflow:auto
+	/*overflow:auto*/
 }
 .body--share{
 	height:100%;
-	overflow:auto
+	/*overflow:auto*/
 }
 .body--share .preview-box{
 	margin-top:6rem;
