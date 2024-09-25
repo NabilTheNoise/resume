@@ -3,38 +3,39 @@
 	box-sizing:border-box
 }
 html{
-	
 	font-size:7.5px;
 	line-height:1.25;
 	color:#212121;
 	overflow: hidden;
 	padding-top: 10px;
 	margin-top: 10px;
+	height: 100%;
 }
 body{
 	margin:0;
 	padding:0;
-	width:100%
+	width:100%;
+	overflow:hidden;
 }
-.body--webpdf
+.body--webpdf,
 .template__fixed-element,
-.body--pdf 
+.body--pdf,
 .template__fixed-element{
 	display:none
 }
 .body--preview{
 	height:169.71429rem;
-	/*overflow:auto*/
+	overflow:hidden;
 }
 .body--preview .preview-box{
 	margin-top:6rem;
 	margin-bottom:6rem;
 	height:157.71429rem;
-	/*overflow:auto*/
+	overflow:hidden;
 }
 .body--share{
 	height:100%;
-	/*overflow:auto*/
+	overflow:hidden;
 }
 .body--share .preview-box{
 	margin-top:6rem;
@@ -48,8 +49,8 @@ body{
 	padding:35px
 }
 .body--markup .preview-box{
-	-webkit-box-shadow:0px 0px 20px rgba(0,0,0,0.05);
-	box-shadow:0px 0px 20px rgba(0,0,0,0.05);
+	-webkit-box-shadow:0 0 20px rgba(0,0,0,0.05);
+	box-shadow:0 0 20px rgba(0,0,0,0.05);
 	background:white;
 	padding-top:6rem;
 	padding-bottom:6rem
@@ -75,9 +76,9 @@ a:hover{
 .container{
 	position:relative;
 	display:block;
-	max-width:120rem;
+	max-width:140rem;
 	font-size:1.8rem;
-	padding:0rem 40rem 0rem 8.2rem;
+	padding:0 40rem 0 8.2rem;
 	line-height:1.55;
 	font-weight:400
 }
@@ -87,13 +88,13 @@ a:hover{
 }
 .aside{
 	position:absolute;
-	top:0rem;
-	right:8rem;
-	width:30rem;
+	top:0;
+	right:0;
+	width:35rem;
 	padding:0.5rem 1.2rem;
 	border-radius:1.4rem}
 .personal-container{
-	padding:0rem 8.2rem}
+	padding:0 8.2rem}
 .personal{
 	width:100%;
 	display:-webkit-box;
@@ -245,9 +246,8 @@ a:hover{
 .aside__link{
 	display:inline-block;
 	max-width:100%;
-	/*overflow-wrap:break-word;*/
+	overflow-wrap:break-word;
 	word-wrap:break-word;
-	word-break:break-all;
 	word-break:break-word
 }
 .aside__paragraph{
@@ -273,7 +273,7 @@ a:hover{
 	border-radius:3px;
 	margin-top:0.4rem
 }
-.progress__inner{width:0%;
+.progress__inner{width:0;
 	height:100%;
 	border-radius:3px
 }
